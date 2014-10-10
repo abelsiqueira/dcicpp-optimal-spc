@@ -1,9 +1,15 @@
 #!/usr/bin/env ruby
 
 options = {
+  "cholesky_base_correction"=>[1e-12,1e-10],
   "eta3"=>[0.6, 0.7, 0.8, 0.9],
-  "phi2"=>[0.75, 0.9, 0.99],
-  "use_constraint_scaling"=>[0, 1]
+  "phi2"=>[0.25, 0.5, 0.75, 0.9, 0.99],
+  "thetaR"=>[0.1, 0.25, 0.5, 0.75, 0.9, 0.99],
+  "use_constraint_scaling"=>[0, 1],
+  "use_normal_safe_guard"=>[0, 1],
+  "use_objective_scaling"=>[0, 1],
+  "use_soc"=>[0, 1],
+  "use_variable_scaling"=>[0, 1]
 }
 keys = options.keys
 
